@@ -13,11 +13,11 @@ jobs:
 
         #Define entorno y clona el repo en el VPS volatil
         steps:
-          - name: Checkout code
-            uses: actions/checkout@v2
+            - name: Checkout code
+              uses: actions/checkout@v2
           # instalamos sshpass
-          - name: Install sshpass
-            run: sudo apt-get install sshpass -y
+            - name: Install sshpass
+              run: sudo apt-get install sshpass -y
           
 
 
