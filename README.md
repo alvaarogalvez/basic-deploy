@@ -46,4 +46,11 @@ curl localhost:3000
 ```
 
 
+6. lanzamos nuestros vps y creamos los secretos de github
+
+```
+SSH_HOST=ip
+SSH_USER=usuario
+SSH_PASSWORD=contraseña
+```
 
