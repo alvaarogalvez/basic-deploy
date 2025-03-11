@@ -25,7 +25,7 @@ jobs:
               run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
             - name: execute command on vps
               env:
-                SSHPASS: $ {{ secrets.SSH_PASSWORD }}
+                SSHPASS: ${{ secrets.SSH_PASSWORD }}
               run: sshpass -e ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "touch test"
           
         
