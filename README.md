@@ -85,4 +85,5 @@ pm2 start server.js --name <nombre>
 creamos la carpeta .github y dentro otra carpeta llamada workflows,
  por ultimo dentro, creamos deploy.yml
 
- 
+12. 
+
