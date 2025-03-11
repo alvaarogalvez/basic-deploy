@@ -26,7 +26,7 @@ jobs:
             - name: execute command on vps
               env:
                 SSHPASS: ${{ secrets.SSH_PASSWORD }}
-              run: sshpass -e ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "touch test"
+              run: sshpass -e ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "pm2 stop camawey; cd basic-deploy; git pull; npm i; pm2 start camawey"
           
         
 
